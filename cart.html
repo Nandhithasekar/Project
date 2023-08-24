@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image and Paragraph Example</title>
+    <Style>
+   /* body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    p {
+        margin-top: 10px;
+    } */
+    .home
+{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background:url(images/) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content
+{
+    flex:1 1 40rem;
+    padding-top:6.5rem;
+    font-size: 20px;
+}
+/* Basic Button Styling */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Hover Effect */
+.btn:hover {
+  background-color: pink;
+  color: red;
+}
+
+/* Click Effect */
+.btn:active {
+  background-color: #1f65a6;
+}
+
+.home .image
+{
+    flex:1 1 40rem;
+}
+
+.home .image img
+{
+    width:75%;
+    padding:1rem;
+    animation:float 3s linear infinite;
+}
+body{
+    background-image: url('images/s3.jpg');
+    
+}
+@keyframes float{
+    0%,100%
+    {
+        transform:translateY(0rem);
+    }
+    50%
+    {
+        transform:translateY(3rem);
+    }
+}
+
+    .end{
+            color: black;
+            font-size: 25px;
+            text-align: right;
+            
+        }
+       
+</Style>
+</head>
+<body>
+    <section class="home" id="home">
+        <div class="content">
+          <h3>
+              Designed with love </h3>
+              <p>"At <b>Clothing</b>,Discover a world of style at your fingertips - welcome to our online shopping heaven!
+                Elevate your wardrobe with handpicked fashion treasures, brought directly to your doorstep.
+                Where fashion and convenience intertwine – experience online shopping like never before.
+                Embrace the future of shopping with our curated online store, tailored to your exquisite taste.
+                Unleash your inner trendsetter by exploring our meticulously selected collection, available just a click away.
+                Indulge in seamless online shopping, where every purchase is a celebration of individuality.
+                More than just a store, we're your partner in crafting a wardrobe that tells your unique story.
+                Join a community of fashion enthusiasts who trust us to deliver style, quality, and a touch of magic to their doorstep.
+                Elevate your shopping experience with our user-friendly platform, designed to make finding your perfect pieces a breeze.
+                Experience the joy of receiving a package filled with carefully chosen items that reflect your personal flair."
+              </p>
+              <a href="order.html" class="btn">Order now</a>
+        </div>
+        <div class="image">
+          <img src="images/j3.jpg" alt="welcome">
+        </div>
+        </section>
+   <!--<script src="script.js"></script> --> 
+    <div class="end">
+        <a href="index.html" class="link">Way to Home!</a>
+    </div>
+</body>
+</html>

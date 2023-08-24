@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Collections</title>
+    <style>
+        .product-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    
+}
+
+.product-container::-webkit-scrollbar{
+    display: none;
+}
+
+.product-card{
+   
+    width: 100%;
+    height: 100%;
+    margin-right: 50px;
+    display: flex;
+   
+}
+
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: inline;
+    margin-left: 100px;
+}
+
+.product-thumb{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.discount-tag{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+.card-btn{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+.product-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background: #efefef;
+}
+
+.product-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.product-brand{
+    text-transform: uppercase;
+}
+
+.product-short-des{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.actual-price{
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+        .home{
+            color: black;
+            font-size: 25px;
+            text-align: right;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Women's collections</h1>
+    </header>
+    <div class="product-container">
+        <div class="product-card">  
+            
+          <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="images/Top.jpg" class="product-thumb" alt="">
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Organza Kurti</h2>
+                <p class="product-short-des">Office wear</p>
+                <span class="price">Rs.425</span><span class="actual-price">Rs.950</span>
+          </div>
+            <div class="product-image">
+                <span class="discount-tag">10% off</span>
+                <img src="images/w1.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Saree</h2>
+                <p class="product-short-des">Comfortable wear</p>
+                <span class="price">Rs.1000</span><span class="actual-price">Rs.900</span>
+            </div>   
+           <div class="product-image">
+                <span class="discount-tag">20% off</span>
+                <img src="images/w2.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Salwar</h2>
+                <p class="product-short-des">Function wear</p>
+                <span class="price">Rs.2000</span><span class="actual-price">Rs.1600</span>
+            </div> 
+            <div class="product-image">
+                <span class="discount-tag">10% off</span>
+                <img src="images/w3.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Frock</h2>
+                <p class="product-short-des">Trendy wear</p>
+                <span class="price">Rs.1000</span><span class="actual-price">Rs.900</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product-card">  
+            
+          <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="images/w4.jpg" class="product-thumb" alt="">
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Organza Kurti</h2>
+                <p class="product-short-des">Office wear</p>
+                <span class="price">Rs.425</span><span class="actual-price">Rs.950</span>
+          </div>
+            <div class="product-image">
+                <span class="discount-tag">10% off</span>
+                <img src="images/w5.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Long frock</h2>
+                <p class="product-short-des">Comfortable wear</p>
+                <span class="price">Rs.1000</span><span class="actual-price">Rs.900</span>
+            </div>   
+           <div class="product-image">
+                <span class="discount-tag">20% off</span>
+                <img src="images/f.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Long frock</h2>
+                <p class="product-short-des">Function wear</p>
+                <span class="price">Rs.2000</span><span class="actual-price">Rs.1600</span>
+            </div> 
+            <div class="product-image">
+                <span class="discount-tag">10% off</span>
+                <img src="images/w6.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Frock</h2>
+                <p class="product-short-des">Trendy wear</p>
+                <span class="price">Rs.1000</span><span class="actual-price">Rs.900</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product-card">  
+            
+          <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="images/w7.jpg" class="product-thumb" alt="">
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Short frock</h2>
+                <p class="product-short-des">Office wear</p>
+                <span class="price">Rs.425</span><span class="actual-price">Rs.950</span>
+          </div>
+            <div class="product-image">
+                <span class="discount-tag">10% off</span>
+                <img src="images/w8.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">western crop top</h2>
+                <p class="product-short-des">Comfortable wear</p>
+                <span class="price">Rs.1000</span><span class="actual-price">Rs.900</span>
+            </div>   
+           <div class="product-image">
+                <span class="discount-tag">20% off</span>
+                <img src="images/w9.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">T-shirt</h2>
+                <p class="product-short-des">Western wear</p>
+                <span class="price">Rs.2000</span><span class="actual-price">Rs.1600</span>
+            </div> 
+            <div class="product-image">
+                <span class="discount-tag">10% off</span>
+                <img src="images/w-shortf.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand"> Short Frock</h2>
+                <p class="product-short-des">Trendy wear</p>
+                <span class="price">Rs.1000</span><span class="actual-price">Rs.900</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="home">
+        <a href="index.html" class="link">Way to Home!</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories</title>
+    <style>
+        .product-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    
+}
+
+.product-container::-webkit-scrollbar{
+    display: none;
+}
+
+.product-card{
+   
+    width: 100%;
+    height: 100%;
+    margin-right: 50px;
+    display: flex;
+   
+}
+
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: inline;
+    margin-left: 100px;
+}
+
+.product-thumb{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.discount-tag{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+.card-btn{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+.product-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background: #efefef;
+}
+
+.product-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.product-brand{
+    text-transform: uppercase;
+}
+
+.product-short-des{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.actual-price{
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+        .home{
+            color: black;
+            font-size: 25px;
+            text-align: right;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Accessories</h1>
+    </header>
+    <div class="product-container">
+        <div class="product-card">  
+            
+          <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="images/A6.jpg" class="product-thumb" alt="">
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Chain</h2>
+             <!--   <p class="product-short-des">Casual wear</p> -->
+                <span class="price">Rs.5000</span><span class="actual-price">Rs.10000</span>
+          </div>
+            <div class="product-image">
+                <span class="discount-tag">10% off</span>
+                <img src="images/AccessoriesA.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Hair bands</h2>
+              <!--  <p class="product-short-des">Casual wear</p> -->
+                <span class="price">Rs.90</span><span class="actual-price">Rs.100</span>
+            </div>   
+           <div class="product-image">
+                <span class="discount-tag">20% off</span>
+                <img src="images/A9.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Boys wrist watch</h2>
+             <!--   <p class="product-short-des">Function wear</p> -->
+                <span class="price">Rs.1600</span><span class="actual-price">Rs.2000</span>
+            </div> 
+            <div class="product-image">
+                <span class="discount-tag">10% off</span>
+                <img src="images/A3.webp" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Bracelet</h2>
+              <p class="product-short-des">Comfortable wear</p> 
+                <span class="price">Rs.900</span><span class="actual-price">Rs.1000</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product-card">  
+            
+          <div class="product-image">
+                <span class="discount-tag">10% off</span>
+                <img src="images/A1.webp" class="product-thumb" alt="">
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Girls wrist watch</h2>
+             <!--  <p class="product-short-des">Trendy wear</p> --> 
+                <span class="price">Rs.1800</span><span class="actual-price">Rs.2000</span>
+          </div>
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="images/A4.png" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Scrunchies</h2>
+              <!--  <p class="product-short-des">Function wear</p> -->
+                <span class="price">Rs.50</span><span class="actual-price">Rs.100</span>
+            </div>   
+           <div class="product-image">
+                <span class="discount-tag">20% off</span>
+                <img src="images/A2.webp" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Earing</h2>
+              <!--  <p class="product-short-des">Trendy wear</p> -->
+                <span class="price">Rs.800</span><span class="actual-price">Rs.1000</span>
+            </div> 
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="images/A7.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Nose pin</h2>
+              <!--  <p class="product-short-des">Trendy wear</p> -->
+                <span class="price">Rs.2000</span><span class="actual-price">Rs.4000</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product-card">  
+            
+          <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="images/A8.jpg" class="product-thumb" alt="">
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Anklet</h2>
+              <!--  <p class="product-short-des">Function wear</p> -->
+                <span class="price">Rs.425</span><span class="actual-price">Rs.950</span>
+          </div>
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="images/A5.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Clips</h2>
+             <!--   <p class="product-short-des">Function wear</p> -->
+                <span class="price">Rs.25</span><span class="actual-price">Rs.50</span>
+            </div>   
+           <div class="product-image">
+                <span class="discount-tag">20% off</span>
+                <img src="images/A10.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Shoes</h2>
+             <!--   <p class="product-short-des">Casual wear</p> -->
+                <span class="price">Rs.2000</span><span class="actual-price">Rs.1600</span>
+            </div> 
+            <div class="product-image">
+                <span class="discount-tag">10% off</span>
+                <img src="images/A12.jpg" class="product-thumb" alt=""> 
+                <button class="card-btn"><a href="add.html">add to wishlist</a></button>
+                <h2 class="product-brand">Foot wear</h2>
+             <!--   <p class="product-short-des">Function wear</p> -->
+                <span class="price">Rs.1000</span><span class="actual-price">Rs.900</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="home">
+        <a href="index.html" class="link">Way to Home!</a>
+    </div>
+</body>
+</html>

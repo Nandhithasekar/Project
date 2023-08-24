@@ -1,0 +1,146 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist Example</title>
+  <link rel="stylesheet" href="styles.css">
+ <Style>
+.product{
+  max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    background-image: url(images/wb1.jpg);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body{
+    background-image: url('images/Fb.jpg');
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  .wishlist {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    background-image: url(images/wb1.5.png);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+.home{
+            color: black;
+            font-size: 25px;
+            text-align: right;
+            
+        }
+  </Style> 
+</head>
+<body>
+  <div class="product">
+   
+    <h3>Add to wishlist</h3>
+    <p>click below</p>
+    <button class="wishlist-btn">Add</button>
+  </div>
+
+ <div class="product">
+    <img src="product2.jpg" alt="Product 2">
+    <h3>Product 2</h3>
+    <p>$150</p>
+    <button class="wishlist-btn">Add to Wishlist</button>
+  </div> 
+
+  <div id="wishlist" class="wishlist">
+    <h2>Wishlist</h2>
+    <ul id="wishlist-items"></ul>
+  </div>
+  <div class="home">
+    <a href="index.html" class="link">Way to Home!</a>
+</div>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const wishlistBtns = document.querySelectorAll(".wishlist-btn");
+    const wishlistItems = document.getElementById("wishlist-items");
+  
+    wishlistBtns.forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        const product = btn.parentElement;
+        const productName = product.querySelector("h3").textContent;
+  
+        const listItem = document.createElement("li");
+        listItem.textContent = productName;
+  
+        wishlistItems.appendChild(listItem);
+      });
+    });
+  });
+</script>
+
+ 
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add to Wishlist Example</title>
+  <style>
+    /* Product Styling */
+    .product{
+  max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    background-image: url(images/wb1.jpg);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Wishlist Button Styling */
+.wishlist-button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body{
+    background-image: url('images/s3.jpg');
+}
+.home{
+            color: black;
+            font-size: 25px;
+            text-align: right;
+            
+        }
+  </style>
+</head>
+<body>
+ 
+  <div class="product">
+    <h2>Product Name</h2>
+    <button class="wishlist-button" onclick="addToWishlist()">Add to Wishlist</button>
+  </div>
+  <div class="home">
+    <a href="index.html" class="link">Way to Home!</a>
+</div>
+
+  <script >
+    function addToWishlist() {
+  // Add your logic here to handle adding to the wishlist
+  alert("Product added to wishlist!");
+}
+
+  </script>
+</body>
+</html> 
+
